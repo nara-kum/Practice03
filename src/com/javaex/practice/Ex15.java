@@ -2,32 +2,27 @@ package com.javaex.practice;
 
 import java.util.Scanner;
 
-public class Ex14 {
-	
+public class Ex15 {
+
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("숫자를 입력하세요 : ");
 		int num = sc.nextInt();
-		int sum=0;
 		int i=1;
 		
-		while(true) {
-
-			System.out.print(i);
-			sum=sum+i;
+		while(i<=num) {
 			
-			if(i==num) {
-				System.out.println();
+			if(num==i) {
 				break;
+			}else if(num%i==0) {
+				System.out.println(i);
 			}
-			
-			System.out.print("+");
 			
 			i++;
 		}
-
-		System.out.println("합계 : "+sum);
+		
+		System.out.println(num);
 		
 		sc.close();
 
