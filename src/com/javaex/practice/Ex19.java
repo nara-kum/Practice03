@@ -37,8 +37,6 @@ public class Ex19 {
 			}else {
 				System.out.println("다시 입력해주세요");
 			}
-			
-			select++;
 		
 		}
 		
